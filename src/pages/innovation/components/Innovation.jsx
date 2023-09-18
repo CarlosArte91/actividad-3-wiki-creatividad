@@ -46,6 +46,15 @@ export default function Innovation() {
               3. Conceptos importantes relacionados
             </a>
           </li>
+
+          <li>
+            <a
+              className="hover:underline hover:text-violet-700"
+              href="#innovation-references"
+            >
+              4. Referencias bibliográficas
+            </a>
+          </li>
         </ul>
       </section>
 
@@ -124,6 +133,42 @@ export default function Innovation() {
           <p>{INNOVATION_PAGE.IMPORTANT_CONCEPTS_PARAGRAF_4}</p>
         </article>       
       </section>
+
+      <section id="innovation-references" className="mt-4">
+        <h2 className="font-serif text-2xl pt-5 pb-2 pl-1">
+          {INNOVATION_PAGE.REFERENCES_TITLE}
+        </h2>
+
+        <hr />
+        <div className="flex flex-col gap-2 mt-6">
+          <article className="mb-6">
+            <p>
+              {`${INNOVATION_PAGE.REFERENCES_PARAGRAF_1} `}
+              <a
+                className="underline text-blue-500"
+                href={INNOVATION_PAGE.REFERENCES_LINK_1}
+                target="blank"
+              >
+                {INNOVATION_PAGE.REFERENCES_LINK_1}
+              </a>
+            </p>
+          </article>
+
+          <article className="mb-6">
+            <p>
+              {`${INNOVATION_PAGE.REFERENCES_PARAGRAF_2} `}
+              <a
+                className="underline text-blue-500"
+                href={INNOVATION_PAGE.REFERENCES_LINK_2}
+                target="blank"
+              >
+                {INNOVATION_PAGE.REFERENCES_LINK_2}
+              </a>
+            </p>
+          </article>
+        </div>
+      </section>
+
     </main>
   )
 }
